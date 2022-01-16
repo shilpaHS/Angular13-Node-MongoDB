@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'http://localhost:8080/api/property';
+const baseUrl = 'https://property-management-server-app.herokuapp.com/api/property';
 @Injectable({
   providedIn: 'root'
 })

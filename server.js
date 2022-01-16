@@ -16,10 +16,16 @@ db.mongoose
         console.log("Cannot connect to the database!", err);
         process.exit();
     });
-
+var whitelist = ['http://localhost:4200', 'https://bot2-191b5.web.app/']
 var corsOptions = {
-    origin: "http://localhost:4200"
-};
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    }
+}
 
 app.use(cors(corsOptions));
 
