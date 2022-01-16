@@ -16,7 +16,7 @@ db.mongoose
         console.log("Cannot connect to the database!", err);
         process.exit();
     });
-var whitelist = ['http://localhost:4200', 'https://bot2-191b5.web.app/']
+var whitelist = ['http://localhost:4200', 'https://bot2-191b5.web.app']
 var corsOptions = {
     origin: function (origin, callback) {
         console.log(origin)

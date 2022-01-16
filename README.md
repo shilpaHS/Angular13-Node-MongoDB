@@ -2,13 +2,6 @@
 
 Complete CRD with Angular13, bootstrap 5, Node & MongoDB.
 
-## Backend
-You can use this repo with these backends examples:
-
-| Framework | DataBase | Repo |
-| --- | --- | --- |
-| NodeJS with ExpressJS 📦 | MongoDB with Mongoose | <a href="https://github.com/shilpaHS/Angular13-Node-MongoDB">REPO</a> |
-
 ## Screenshots
 <br>
 <p>
